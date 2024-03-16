@@ -1,0 +1,29 @@
+
+#allpage{
+    display: flex;
+    justify-content: space-evenly;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.534);
+
+
+}
+#bg{
+    margin-top: 0px;
+    background-image:url("./../assets/imges/bg/5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+button{
+    font-size: larger;
+}
+p{
+    /* text-align: center; */
+    font-size: smaller;
+}
+.my-component {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }

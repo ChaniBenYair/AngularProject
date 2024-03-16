@@ -1,0 +1,18 @@
+.example-card {
+    max-width: 330px;
+    /* max-height: 800px; */
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }
+  #submit{
+    background-color: rgba(249, 195, 204, 0.477);
+    border-radius: 3px;
+    max-width: 20px;
+    margin: 2px;
+  }
+  .p{
+    font-size: smaller;
+  }
+  

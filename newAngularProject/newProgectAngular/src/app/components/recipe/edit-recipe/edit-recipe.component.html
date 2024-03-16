@@ -1,0 +1,50 @@
+<app-nav-bar></app-nav-bar>
+<div id="alll">
+  <div>
+    <form [formGroup]="recipeForm">
+      <mat-form-field>
+        <mat-label for="recipeName">recipeName</mat-label>
+        <input matInput type="text" id="recipeName" formControlName="recipeName">
+        <div *ngIf="recipeForm.get('recipeName')?.hasError('required') && recipeForm.get('recipeName')?.dirty">
+          Username is required.
+        </div>
+      </mat-form-field><br />
+
+      <mat-form-field>
+        <mat-label for="difficultyLevel">difficultyLevel</mat-label>
+        <input matInput type="number" id="difficultyLevel" formControlName="difficultyLevel">
+        <div
+          *ngIf="recipeForm.get('difficultyLevel')?.hasError('required') && recipeForm.get('difficultyLevel')?.dirty">
+          Username is required.
+        </div>
+      </mat-form-field><br />
+
+      <mat-form-field>
+        <mat-label for="preparationTimeInMinutes">preparationTimeInMinutes</mat-label>
+        <input matInput type="number" id="preparationTimeInMinutes" formControlName="preparationTimeInMinutes">
+        <div
+          *ngIf="recipeForm.get('preparationTimeInMinutes')?.hasError('required') && recipeForm.get('preparationTimeInMinutes')?.dirty">
+          Username is required.
+        </div>
+      </mat-form-field><br />
+
+      <mat-form-field>
+        <mat-label for="preparationTimeInMinutes">preparationTimeInMinutes</mat-label>
+        <input matInput type="text" id="preparationTimeInMinutes" formControlName="preparationTimeInMinutes">
+        <div
+          *ngIf="recipeForm.get('preparationTimeInMinutes')?.hasError('required') && recipeForm.get('preparationTimeInMinutes')?.dirty">
+          Username is required.
+        </div>
+      </mat-form-field><br />
+
+      <mat-form-field class="example-full-width">
+        <mat-label for="preparationSteps">preparationSteps</mat-label>
+        <textarea matInput id="preparationSteps" formControlName="preparationSteps"></textarea>
+      </mat-form-field>
+    </form>
+    <button mat-button (click)="saveChanges()">save</button>
+  </div>
+  <div>
+    <h1>edit recipe</h1>
+  </div>
+</div>

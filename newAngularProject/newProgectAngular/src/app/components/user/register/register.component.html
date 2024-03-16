@@ -1,0 +1,32 @@
+<app-nav-bar></app-nav-bar>
+<div id="alll">
+  <div>
+    <form [formGroup]="registerForm" >
+      <mat-form-field>
+        <mat-label for="name">Enter your name</mat-label>
+        <input matInput type="text" idname formControlName="name" >
+      </mat-form-field>
+      <br>
+      <mat-form-field >
+          <mat-label for="address" >Enter your address</mat-label>
+          <input matInput type="text" id="address" formControlName="address" >
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+          <mat-label for="email">Enter your email</mat-label>
+          <input matInput placeholder="email" formControlName="email">
+      </mat-form-field>
+      <br>
+      <mat-form-field >
+          <mat-label for="Password">Enter your password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" id="" formControlName="password">
+      </mat-form-field>
+      <br> 
+      <button mat-raised-button color="pink" class="submit-button" (click)="register()"
+        >Register</button> 
+    </form>
+  </div>
+  <div>
+    <h1>register</h1>
+  </div>
+</div>

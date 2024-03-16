@@ -1,0 +1,42 @@
+#allpage {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    /* background-color: rgba(255, 255, 255, 0.635); */
+    align-items: center;
+    background-color: rgba(249, 195, 204, 0.477);
+}
+
+#bg {
+    margin-top: 0px;
+    /* background-image: url("./../../../assets/imges/bg/bg.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+button {
+    font-size: larger;
+    font-family: Cooper Black;
+}
+
+p {
+    /* text-align: center; */
+    font-size: smaller;
+    font-family: Cooper Black;
+}
+
+.my-component {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.img1 {
+    width: 6%;
+    position: fixed;
+    top: 0.2%;
+    right: 4vw;
+    z-index: 206;
+}

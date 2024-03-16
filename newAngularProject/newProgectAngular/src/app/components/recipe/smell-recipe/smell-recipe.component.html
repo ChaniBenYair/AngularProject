@@ -1,0 +1,21 @@
+<div>
+<form [formGroup]="this.recipeForm">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{recipe.recipeName}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{recipe.imageRoute}}" alt="Photo of a Shiba Inu">
+        <mat-card-actions>
+          <div class="p">preparation time {{recipe.preparationTimeInMinutes}}</div>
+          <br/>
+          <div class="p">level {{recipe.difficultyLevel}}</div>
+
+          <button id="submit" mat-button (click)="toAllDetails()">+</button><br>
+          <button id="submit" mat-button (click)="editRecipe()">edit</button>
+          <button id="submit" mat-button (click)="deleteRecipe()">delete</button>
+
+        </mat-card-actions>
+      </mat-card>
+</form>
+</div>

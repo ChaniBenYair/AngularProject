@@ -1,0 +1,19 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  h1 {
+    font-size: 500%;
+    font-family: Cooper Black;
+}
+#alll{
+  margin-top: 5%;
+  /* margin-left: 20%; */
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,14 @@
+<app-nav-bar></app-nav-bar>
+<div id="allll">
+    <div class="text">
+        <h1>{{recipe?.recipeName}}</h1>
+        <p *ngFor="let i of recipe?.ingredients">
+            {{i}}</p>
+        <p *ngFor="let i of recipe?.preparationSteps">
+            {{i}}</p>
+    </div>
+    <div id="img">
+        <img src="{{recipe?.imageRoute}}">
+    </div>
+
+</div>

@@ -1,0 +1,12 @@
+#bg{
+    margin-top: 0px;
+    background-image:url("./../../../assets/imges/bg/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 700%;
+    font-family: Cooper Black;
+}
